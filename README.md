@@ -57,6 +57,16 @@ python main.py
 
 Open http://localhost:8080 in your browser.
 
+### Run Again Later
+
+```bash
+cd pikpak-web
+source .venv/bin/activate
+python main.py
+```
+
+> `source .venv/bin/activate` activates the virtual environment where project dependencies are installed. Without it, the system Python will be used and imports will fail. You only need to run `pip install` once — after that, just activate and run.
+
 ### LAN Access
 
 The server binds to `0.0.0.0:8080` by default, so you can access it from any device on your local network using your machine's IP address.
@@ -139,6 +149,16 @@ python main.py
 ```
 
 浏览器打开 http://localhost:8080
+
+### 后续启动
+
+```bash
+cd pikpak-web
+source .venv/bin/activate
+python main.py
+```
+
+> `source .venv/bin/activate` 用于激活 Python 虚拟环境，项目依赖都装在 `.venv` 目录里。不激活的话会使用系统 Python，缺少依赖会报错。`pip install` 只需要首次运行一次，之后每次只需激活环境然后启动即可。
 
 ### 局域网访问
 
