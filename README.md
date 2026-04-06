@@ -44,11 +44,9 @@ A WinDirStat-style web tool for visualizing PikPak cloud storage file size distr
 git clone https://github.com/zhengyehui/pikpak-web.git
 cd pikpak-web
 
-# Create .env file with your PikPak credentials
-cat > .env << 'EOF'
-PIKPAK_USERNAME=your_email@example.com
-PIKPAK_PASSWORD=your_password
-EOF
+# Create .env from template and fill in your credentials
+cp .env.example .env
+# Edit .env with your PikPak email and password
 
 # Setup and run
 python3 -m venv .venv
@@ -129,11 +127,9 @@ MIT
 git clone https://github.com/zhengyehui/pikpak-web.git
 cd pikpak-web
 
-# 创建 .env 文件填入你的 PikPak 账号
-cat > .env << 'EOF'
-PIKPAK_USERNAME=你的邮箱
-PIKPAK_PASSWORD=你的密码
-EOF
+# 从模板创建配置文件，填入你的账号密码
+cp .env.example .env
+# 编辑 .env 填入你的 PikPak 邮箱和密码
 
 # 安装依赖并启动
 python3 -m venv .venv
